@@ -1,0 +1,25 @@
+AGENDA ACADEMICA - CEUB (Desenvolvimento Mobile)
+
+COMO GERAR O APK
+1. Android Studio > File > Open > selecione a pasta AgendaAcademica.
+2. Aguarde o "Gradle Sync" terminar (precisa de internet na primeira vez).
+   Se pedir para instalar o Android SDK 34, aceite.
+3. Build > Generate App Bundles or APKs > Generate APKs.
+4. Clique em "locate" na notificacao. O arquivo fica em:
+   app/build/outputs/apk/debug/app-debug.apk
+5. Compacte o APK em .zip e envie.
+
+REQUISITOS DO DESAFIO (slide da aula 10)
+- 2 Activities + Intent explicito ........ MainActivity -> ResultadoActivity
+- String, Int, Double, Boolean ........... MainActivity.kt
+- TextField, Button, Checkbox ............ MainActivity.kt
+- toIntOrNull() / toDoubleOrNull() ....... MainActivity.kt (botao Analisar)
+- if / else if / else e && ............... Logica.kt
+- Passagem de dados entre Activities ..... putExtra / getExtra
+- Imagem em res/drawable ................. drawable/ic_academico.xml
+- Cor de fundo personalizada ............. nas duas Activities
+
+GERAR O APK SEM ANDROID STUDIO (GitHub Actions)
+1. Suba todo o conteudo desta pasta (inclusive .github) para um repositorio no GitHub.
+2. Aba Actions > Build APK > Run workflow.
+3. Ao terminar, baixe o artefato "app-debug" (contem o app-debug.apk).
